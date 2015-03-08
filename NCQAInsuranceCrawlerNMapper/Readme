@@ -1,0 +1,47 @@
+Author : Prajna Shetty
+Email - pshet001@ucr.edu
+
+CONTENTS OF THIS FILE
+---------------------
+ * Introduction
+ * Requirements
+ * Description of Files
+ * Configuration
+ * How to run
+
+
+INTRODUCTION
+------------
+This module has 2 parts - 
+1) The first part is the crawler that will download the insurance plans from the NCQA web site.
+2) The second part will do the mapping of the ncqa insurance plans to the vitals.com plans present in the providersCleaned table.
+
+REQUIREMENTS
+------------
+This module requires the following additional jars:
+* jsoup-<version_number>.jar
+* selenium-java-<version_number>.jar
+* selenium-server-standalone-<version_number>.jar
+* opencsv-<version_number>.jar
+* mysql-connector-java-<version_number>.jar
+
+
+DESCRIPTION OF FILES
+------------------
+The code for the first part of this module is all within the com.ncqa.healthplanrankings.crawler.main package
+
+The code for the second part of this module is all within the com.ncqa.healthplanrankings.mapping package.
+
+CONFIGURATION
+-------------
+
+For the first part, set the URLs for crawling in the Constants.java class. Also, set the file paths for the CSVs that will contain the output.
+
+For the second part, set the JDBC connection URLs, username and password in the JDBCConnection.java class. Set the file paths for the CSVs in the MappingConfigurations.java class.
+
+HOW TO RUN
+----------
+For the first part, run the main method in the InsurancePlanCrawler.java class.
+
+For the second part, for Vitals Insurances mapping run the PlanMappingVitals.java class and for Healthgrades mapping, run the PlanMappingHealthgrades.java class.
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/Applications/jars/jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="/Applications/jars/opencsv-2.3.jar"/>
+	<classpathentry kind="lib" path="/Applications/jars/selenium-2.42.1/selenium-java-2.42.1.jar"/>
+	<classpathentry kind="lib" path="/Applications/jars/selenium-2.42.1/selenium-server-standalone-2.42.1.jar"/>
+	<classpathentry kind="lib" path="/Applications/jars/mysql-connector-java-5.1.32-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
